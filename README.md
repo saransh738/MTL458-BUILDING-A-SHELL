@@ -1,6 +1,6 @@
 # Building a Shell
 ## Problem Statement
-We will first build a simple shell, much like the bash shell of Linux. A shell takes in user input, forks one or more child processes using the fork system call, calls exec from these children to execute user commands, and reaps the dead children using the wait system call. Learn about the fork system call and all variants of the wait and exec system calls before you begin this assignment.
+We will first build a simple shell, much like the bash shell of Linux. A shell takes in user input, forks one or more child processes using the fork system call, calls exec from these children to execute user commands, and reaps the dead children using the wait system call. 
 # Details
 * Build a simple Linux shell using C. On executing your code, the shell should display a prompt and ask the user for input. The format of the prompt should be as follows:
 ```` [{ current_directory }∼$ ] ````
@@ -10,7 +10,8 @@ Any entered command will look like: ```` / home / saylor / Desktop /dev∼$ echo
 * An incorrect number of arguments or incorrect command format should print an error in the shell. The shell must not crash and should simply move on to the next command. The shell should execute simple commands (commands that are readily available as executables and can be invoked using exec system calls) like ls, cat, echo, and sleep.
 * Other than supporting simple command execution, the shell should support running commands in the background, support piping between commands, and support environment variables.
 * The shell should also support two special commands, cmd history, and ps history.
-```` cmd history: Display the Last 5 executed commands(irrespective of failure or successful run) in FIFO order(latest
+````
+cmd history: Display the Last 5 executed commands(irrespective of failure or successful run) in FIFO order(latest
 command on top). Example output :
 echo hii
 echo $PID
